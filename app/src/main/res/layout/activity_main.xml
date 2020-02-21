@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#000000"
+    tools:context="com.ngsce.keisuke.nzdrivett_x.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="2560dp"
+        android:layout_height="1440dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/SP1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des1"
+            android:layout_alignBottom="@+id/Des1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="                         "
+            android:textColor="#000000"
+            android:textSize="140px"
+            app:fontFamily="@font/roboto_mono" />
+
+        <TextView
+            android:id="@+id/SP2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/SP1"
+            android:layout_alignBottom="@+id/SP1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="                                    "
+            android:textColor="#000000"
+            android:textSize="140px"
+            app:fontFamily="@font/roboto_mono" />
+
+        <TextView
+            android:id="@+id/information"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/currentTime"
+            android:layout_alignBottom="@+id/currentTime"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:ellipsize="none"
+            android:scrollHorizontally="false"
+            android:singleLine="true"
+            android:text="information"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <com.ngsce.keisuke.nzdrivett_x.Lines
+            android:id="@+id/lines"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/Des1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Houmen"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="Koizumi Sta."
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/Des2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Des1"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="近鉄郡山駅"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/Des3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Des2"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:text="近鉄学園前駅"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination1S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des1"
+            android:layout_alignBottom="@+id/Des1"
+            android:layout_marginStart="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_toEndOf="@+id/SP2"
+            android:layout_toRightOf="@+id/SP2"
+            android:text="00:000"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination2S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des2"
+            android:layout_alignStart="@+id/destination1S"
+            android:layout_alignLeft="@+id/destination1S"
+            android:layout_alignBottom="@+id/Des2"
+            android:text="00:000"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination3S"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des3"
+            android:layout_alignStart="@+id/destination2S"
+            android:layout_alignLeft="@+id/destination2S"
+            android:layout_alignBottom="@+id/Des3"
+            android:text="00:000"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/currentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Des3"
+            android:layout_toEndOf="@+id/destination3P"
+            android:layout_toRightOf="@+id/destination3P"
+            android:text="00:000"
+            android:textAlignment="textEnd"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination1P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/SP1"
+            android:layout_alignBottom="@+id/SP1"
+            android:layout_toEndOf="@+id/SP1"
+            android:layout_toRightOf="@+id/SP1"
+            android:text="00:000"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination2P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des2"
+            android:layout_alignBottom="@+id/Des2"
+            android:layout_toEndOf="@+id/SP1"
+            android:layout_toRightOf="@+id/SP1"
+            android:text="00:000"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/destination3P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/Des3"
+            android:layout_alignStart="@+id/destination2P"
+            android:layout_alignLeft="@+id/destination2P"
+            android:layout_alignBottom="@+id/Des3"
+            android:text="00:000"
+            android:textAlignment="textStart"
+            android:textColor="#ffffff"
+            android:textSize="140px" />
+
+        <TextView
+            android:id="@+id/Houmen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:text="Destination"
+            android:textColor="#ffffff"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/Jihatsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/SP1"
+            android:layout_toRightOf="@+id/SP1"
+            android:text="1st"
+            android:textColor="#ffffff"
+            android:textSize="70px" />
+
+        <TextView
+            android:id="@+id/Jijihatsu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/destination1S"
+            android:layout_alignLeft="@+id/destination1S"
+            android:layout_alignParentTop="true"
+            android:text="2nd"
+            android:textColor="#ffffff"
+            android:textSize="70px" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
